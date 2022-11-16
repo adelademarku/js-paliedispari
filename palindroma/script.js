@@ -4,7 +4,7 @@ Creare una funzione per capire se la parola inserita è palindroma e poi usate q
 
 
 
-
+//------------MAIN-----------------
 
 //chiedo al utente di inserire una parola
 
@@ -16,7 +16,7 @@ let parolaInseritaInMinuscolo = parolaInserita.toLocaleLowerCase();
 
 //stampo la funzione
 
-let parolaInseritaInvertita = stringaInvertita(parolaInseritaInMinuscolo);
+let parolaInseritaInvertita = getstringaInvertita(parolaInseritaInMinuscolo);
 
 //verifico se la parola inserita dal utente è palindroma
 
@@ -24,11 +24,15 @@ if (parolaInseritaInMinuscolo == parolaInseritaInvertita) {
     console.log("la parola inserita è palindroma")
 }
 
+//------------------------------
+
+
+
 
 
 // --------creo la funzione dove posso invertire una stringa ---------
 
-function stringaInvertita(stringa) {
+function getstringaInvertita(stringa) {
 
     let stringaInversa = stringa.split('').reverse().join('');
     return stringaInversa;

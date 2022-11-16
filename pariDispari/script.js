@@ -5,6 +5,7 @@ Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto. */ 
 
+//-------------MAIN-----------------
 
 //chiedo al utente di inserire un numero da 1 a 5 
 let numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"));
@@ -23,21 +24,21 @@ console.log ("la somma dei due numeri è:" + sum);
 
 //richiamo la funzione per vedere se la somma è pari o dispari 
 
-let risultato = stampaNumeroPariDispari (sum)
+let risultato = isStampaNumeroPariDispari (sum)
 
-
+//----------------------------------
 
 
 // -----------creo una funzione per capire se il numero è pari o dispari-------
 
-function stampaNumeroPariDispari(num){
+function isStampaNumeroPariDispari(num){
 
     if(num % 2 == 0){ 
-        console.log("il numero è pari quindi hai vinto!!");
-    } else {
+      return   "il numero è pari quindi hai vinto!!";
+    } 
         
-        console.log(" il numero è dispari hai perso ! ");
-    }
+        return" il numero è dispari hai perso ! ";
+    
 }
 
 
