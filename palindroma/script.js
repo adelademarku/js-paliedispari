@@ -26,7 +26,7 @@ if (parolaInseritaInMinuscolo == parolaInseritaInvertita) {
 
 
 
-// creo la funzione dove posso invertire una stringa
+// --------creo la funzione dove posso invertire una stringa ---------
 
 function stringaInvertita(stringa) {
 
