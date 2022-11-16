@@ -1,25 +1,37 @@
+/*TESTO ESERCIZIO :
+Chiedere all’utente di inserire una parola
+Creare una funzione per capire se la parola inserita è palindroma e poi usate quella funzione appena dichiarata */
+
+
+
+
+
 //chiedo al utente di inserire una parola
 
-let parolaInserita = prompt ("Inserisci una parola!");
+let parolaInserita = prompt("Inserisci una parola!");
+
+//converto tutto in minuscolo 
+
+let parolaInseritaInMinuscolo = parolaInserita.toLocaleLowerCase();
 
 //stampo la funzione
 
-let parolaInseritaInvertita = stringaInvertita (parolaInserita);
+let parolaInseritaInvertita = stringaInvertita(parolaInseritaInMinuscolo);
 
 //verifico se la parola inserita dal utente è palindroma
 
-if (parolaInserita == parolaInseritaInvertita){
-    console.log ("la parola inserita è palindroma")
+if (parolaInseritaInMinuscolo == parolaInseritaInvertita) {
+    console.log("la parola inserita è palindroma")
 }
 
 
 
 // creo la funzione dove posso invertire una stringa
 
-function stringaInvertita (stringa) {
+function stringaInvertita(stringa) {
 
-   let stringaInversa = stringa.split('').reverse().join('');  
-  return stringaInversa;
+    let stringaInversa = stringa.split('').reverse().join('');
+    return stringaInversa;
 }
 
 
